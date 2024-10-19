@@ -1,5 +1,5 @@
-#import decimal
-# from decimal import Decimal as d 
+import decimal
+from decimal import Decimal as d
 
 # Generator used to create my_first_calculator
 
@@ -25,7 +25,8 @@ num1 = int(input('Please choose your first number: '))
 sign = input('What do you want to do? +, -, /, or *: ')
 num2 = int(input('Please choose your second number: '))
 """.format(
-        min_num, max_num
+        min_num,
+        max_num,
     ),
     file=python_file,
 )
@@ -48,7 +49,9 @@ for sign in signs:
             # Python will throw a recursion error when too many are used
             print(
                 "if num1 == {} and sign == '{}' and num2 == {}:".format(
-                    num1, sign, num2
+                    num1,
+                    sign,
+                    num2,
                 ),
                 file=python_file,
             )
